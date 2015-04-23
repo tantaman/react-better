@@ -1,1 +1,1 @@
-console.log('wtf');
+import Comp from './Comp.jsx';
