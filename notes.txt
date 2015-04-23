@@ -1,0 +1,20 @@
+1. Decouple Babel JSX from React
+	https://babeljs.io/docs/usage/jsx/
+	https://www.npmjs.com/package/jsx-virtual-hyperscript-loader
+	https://github.com/alexmingoia/jsx-transform
+
+2. Add component lifecycle support to virtual-dom
+	https://github.com/Matt-Esch/virtual-dom
+
+3. Add view-model support to components
+
+4. Explain the problems with React in detail.  High level:
+	-React's handling of state is totally wrong
+	-React's shouldComponentUpdate is totally wrong
+	-React encourages spagehetti code / a lack of domain modeling
+	-React is oddly hard to test (this shouldn't be the case whatsoever)
+	-Two sources of truth: props vs state
+	-Unable to inherit even when it makes sense
+	-A component's children shouldn't always be opaque.  Sometimes you know the types of children you can take and should be able to take actions on those children based on their type.
+	-The problem of where to place a component's logic.  The splitting of things into mixins and the need for parents to know things they shouldn't / things that should be handled internally to their children.
+	
