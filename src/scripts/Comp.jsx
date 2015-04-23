@@ -1,9 +1,16 @@
 /** @jsx h */
+import h from 'virtual-dom/h';
 
 export var Comp = {
-	a: (
-		<div>
-			Yo
-		</div>
-	),
+	render(count) {
+		return (
+			<div style={{
+					width: (100 + count) + 'px',
+					height: (100 + count) + 'px',
+					border: '1px solid red'
+				}}>
+				Yo
+			</div>
+		);
+	}
 };
